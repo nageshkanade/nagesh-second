@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Event </title>
+</head>
+<body>
+    <button onclick="addition()">Click Me</button>
+   <p id="nagu"></p>
+   <p id="Ans"></p>
+
+    <script>
+        function addition(){
+          //  console.log('Operation is successfully...!')
+         // document.getElementById('nagu').innerHTML='Hi Hello'
+          document.getElementById('nagu').innerHTML='No1:<input type="text" id="no1"> No2:<input type="text" id="no2"> <button style="background-color:red;" onclick="operation()">Add</button>';
+        }
+
+        function operation()
+        {
+            var no1=parseInt(document.getElementById('no1').value);
+            var no2=parseInt(document.getElementById('no2').value);
+            var no3=no1+no2;
+            //alert (no3);
+           document.getElementById('Ans').innerHTML=no3;
+           document.getElementById('no1').value='';
+           document.getElementById('no2').value='';
+        }
+    </script>
+</body>
+</html>

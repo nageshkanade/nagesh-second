@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    
+</head>
+<body>
+    
+
+    <script>
+      const abc =[
+          {'Name':'Nagesh','Email':'Nagesh@gmail.com','Mob':12345,'Gender':'Male'},
+          {'Name':'Rajesh','Email':'Rajesh@gmail.com','Mob':12345,'Gender':'FeMale'},
+          {'Name':'Dharm','Email':'Dharm@gmail.com','Mob':12345,'Gender':'Male'},
+      ];
+   
+      
+             const filterData=abc.filter((item)=>
+      
+             item.Gender === 'Male'
+           
+             )
+        document.write(filterData.map((item,index)=>{
+          return '<ul style="list-style-type:none;"><li>'+item.Name+'</li></ul>'
+       }))
+
+       
+       console.log(filterData)
+    </script>
+</body>
+</html>
